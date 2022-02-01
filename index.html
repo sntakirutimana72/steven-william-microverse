@@ -11,13 +11,82 @@
     <p id="description">This is an applicant complaint form.</p>
     <form id="survey-form">
       <div class="md-3">
-        <label for="email">Email</label>
-        <input type="email" class="form-control md-3" id="email" placeholder="Enter your email" required>
+        <label for="name-label" class="form-label">Name</label>
+        <input type="text" class="form-control md-3" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="md-3">
+        <label for="email-label" class="form-label">Email</label>
+        <input type="email" class="form-control md-3" id="email" placeholder="Your Email (e.g: johndoe@outlook.com)" required>
       </div>
 
       <div class="md-3">
         <label for="number">Number</label>
         <input type="number" class="form-control md-3" id="number" placeholder="Enter your number" required>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-sm" id="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdown">
+          <li><a class="dropdown-item" href="#">Choice One</a></li>
+          <li><a class="dropdown-item" href="#">Choice Two</a></li>
+          <li><a class="dropdown-item" href="#">Choice Three</a></li>
+        </ul>
+      </div>
+
+      <div id="options">
+        <div class="option-group" for="group-1">
+          <div class="option-item">
+            <input class="form-check-input" type="radio" name="group-1">
+            <label class="form-check-label" for="flexRadioDefault1">radio 1</label>
+          </div>
+          <div class="option-item">
+            <input class="form-check-input" type="radio" name="group-1">
+            <label class="form-check-label" for="flexRadioDefault1">radio 2</label>
+          </div>
+        </div>
+
+        <div class="option-group" for="group-2">
+          <div class="option-item">
+            <input class="form-check-input" type="radio" name="group-2">
+            <label class="form-check-label" for="flexRadioDefault1">radio 1</label>
+          </div>
+          <div class="option-item">
+            <input class="form-check-input" type="radio" name="group-2">
+            <label class="form-check-label" for="flexRadioDefault1">radio 2</label>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <div class="option-item">
+            <div class="option-item">
+              <input class="form-check-input" type="checkbox" value="box-1" id="box-1">
+              <label class="form-check-label" for="box-1">box-1</label>
+            </div>
+            <div class="option-item">
+              <input class="form-check-input" type="checkbox" value="box-2" id="box-2">
+              <label class="form-check-label" for="box-2">box-2</label>
+            </div>
+            <div class="option-item">
+              <input class="form-check-input" type="checkbox" value="box-3" id="box-3">
+              <label class="form-check-label" for="box-3">box-3</label>
+            </div>
+            <div class="option-item">
+              <input class="form-check-input" type="checkbox" value="box-4" id="box-4">
+              <label class="form-check-label" for="box-4">box-4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <textarea placeholder="Provide additional comment"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" id="submit">Submit</button>
       </div>
     </form>
 
